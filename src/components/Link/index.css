@@ -1,0 +1,8 @@
+.link {
+    margin-left: 6px;
+    color: #000;
+}
+
+.link:visited {
+    color: rgb(49, 57, 50);
+}

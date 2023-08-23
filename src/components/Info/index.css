@@ -1,0 +1,47 @@
+.info {
+    background-color: rgb(191, 208, 192);
+    max-width: 1046px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 2%;
+    color: #000;
+}
+
+.info__header {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+
+.info__paragraph {
+    font-weight: bolder;
+    margin: 0 0 10px 0;
+}
+
+.info__container { 
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.info__avatar {
+    width: 400px;
+    height: 400px;
+    border-radius: 2%;
+    flex: 0 0 auto;
+}
+
+.info__text-container {
+    font-size: 23px;
+}
+
+.info__features-list {
+    margin-bottom: 15px;
+}
+
+
+
+.info__list-item {
+    margin: 10px 0;
+}
