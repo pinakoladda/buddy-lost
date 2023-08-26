@@ -11,13 +11,8 @@ export const Info = () => {
         <img className="info__avatar" src={BuddyAvatar}></img>
         <div className="info__text-container">
           <p className="info__paragraph">
-            This is Buddy, he's 5 years old, his distinguishing features:
+            My name is Nina, this is my true friend Buddy
           </p>
-          <List className="info__features-list" type="circle">
-            <li>the lower teeth are pushed forward and clearly visible</li>
-            <li>a small black spot on the the base of right hind paw</li>
-            <li>responds to the name Buddy</li>
-          </List>
           <p className="info__paragraph">My contacts:</p>
           <List className="info__contacts-list">
             <li className="info__list-item">
@@ -27,7 +22,7 @@ export const Info = () => {
             <li className="info__list-item">
               You can contact me on:
               <Link href="https://t.me/pinakoladda">Telegram</Link>
-              <Link href="https://t.me/pinakoladda">WhatsApp</Link>
+              <Link href="https://wa.me/995598148359">WhatsApp</Link>
             </li>
             <li className="info__list-item">
               Link to my social media:

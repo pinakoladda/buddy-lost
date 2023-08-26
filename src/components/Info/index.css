@@ -1,6 +1,6 @@
 .info {
-    background-color: rgb(191, 208, 192);
-    max-width: 1046px;
+    background-color: rgb(212, 230, 213);
+    max-width: 950px;
     margin: 20px;
     padding: 20px;
     border-radius: 2%;
@@ -17,6 +17,11 @@
 .info__paragraph {
     font-weight: bolder;
     margin: 0 0 10px 0;
+}
+
+.info__paragraph:last-child {
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .info__container { 
