@@ -2,11 +2,14 @@ import "./index.css";
 import BuddyAvatar from "./Images/buddy-avatar.jpg";
 import { List } from "../List";
 import { Link } from "../Link";
+import { useI18n } from "../../hooks/useI18n";
 
 export const Info = () => {
+  const { i18n } = useI18n();
+
   return (
     <div className="info">
-      <h3 className="info__header">If you find my dog please contact me!</h3>
+      <h3 className="info__header">{i18n('title')}</h3>
       <div className="info__container">
         <img className="info__avatar" src={BuddyAvatar}></img>
         <div className="info__text-container">
