@@ -1,5 +1,11 @@
 import "./index.css";
 import BuddyAvatar from "./Images/buddy-avatar.jpg";
+import BuddyAvatarLavif from "./Images/buddy-avatar-800px.avif";
+import BuddyAvatarLwebp from "./Images/buddy-avatar-800px.webp";
+import BuddyAvatarLjpg from "./Images/buddy-avatar-800px.jpg";
+import BuddyAvatarSavif from "./Images/buddy-avatar-400px.avif";
+import BuddyAvatarSwebp from "./Images/buddy-avatar-400px.webp";
+import BuddyAvatarSjpg from "./Images/buddy-avatar-400px.jpg";
 import { useI18n } from "../../hooks/useI18n";
 import { List } from "../List";
 import { Link } from "../Link";
@@ -15,26 +21,35 @@ export const Info = () => {
   return (
     <div className="info">
       <div className="info__language-container">
-        <a
+        <span
           className={`info__language ${
             locale === "en" ? "info__language_active" : ""
           }`}
           onClick={onLocaleChange("en")}
         >
           English
-        </a>
-        <a
+        </span>
+        <span
           className={`info__language ${
             locale === "ru" ? "info__language_active" : ""
           }`}
           onClick={onLocaleChange("ru")}
         >
           Russian
-        </a>
+        </span>
       </div>
       <h3 className="info__header">{i18n("header")}</h3>
       <div className="info__container">
-        <img className="info__avatar" src={BuddyAvatar}></img>
+        <picture>
+          <source srcset={BuddyAvatarLavif} media="(max-width: 900px)" />
+          <source srcset={BuddyAvatarLwebp} media="(max-width: 900px)" />
+          <source srcset={BuddyAvatarLjpg} media="(max-width: 900px)" />
+
+          <source srcset={BuddyAvatarSavif} media="(max-width: 400px)" />
+          <source srcset={BuddyAvatarSwebp} media="(max-width: 400px)" />
+          <source srcset={BuddyAvatarSjpg} media="(max-width: 400px)" />
+          <img className="info__avatar" src={BuddyAvatar} alt="Buddy"></img>
+        </picture>
         <div className="info__text-container">
           <p className="info__paragraph">{i18n("paragraph1")}</p>
           <p className="info__paragraph">{i18n("contacts")}</p>
