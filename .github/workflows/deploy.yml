@@ -4,6 +4,7 @@ name: CI
 
 env:
   NODE_VERSION: "19.x"
+  CI: true
 
 permissions:
   contents: read
