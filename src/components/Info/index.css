@@ -1,10 +1,31 @@
 .info {
-    background-color: rgb(212, 230, 213);
+    background-color: rgb(206, 209, 222);
     max-width: 950px;
     margin: 20px;
     padding: 20px;
     border-radius: 2%;
     color: #000;
+}
+
+.info__language-container {
+   display: flex;
+   justify-content: end;
+   gap: 20px;
+   margin-bottom: 15px;
+}
+
+.info__language {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.info__language:hover {
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+.info__language_active {
+    color: #6b6868;
 }
 
 .info__header {
@@ -100,7 +121,6 @@
   @media screen and (max-width: 410px) {
     .info {
         margin: 6px;
-        padding: 6px;
     }
     .info__avatar {
         width: 300px;
@@ -111,7 +131,6 @@
   @media screen and (max-width: 360px) {
     .info {
         margin: 4px;
-        padding: 4px;
     }
     .info__header {
         font-size: 14px;
