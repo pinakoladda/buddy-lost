@@ -35,19 +35,20 @@ export const Info = () => {
           }`}
           onClick={onLocaleChange("ru")}
         >
-          Russian
+          Русский
         </span>
       </div>
       <h3 className="info__header">{i18n("header")}</h3>
       <div className="info__container">
         <picture>
+          <source srcset={BuddyAvatarSavif} media="(max-width: 400px)" />
+          <source srcset={BuddyAvatarSwebp} media="(max-width: 400px)" />
+          <source srcset={BuddyAvatarSjpg} media="(max-width: 400px)" />
+
           <source srcset={BuddyAvatarLavif} />
           <source srcset={BuddyAvatarLwebp} />
           <source srcset={BuddyAvatarLjpg} />
 
-          <source srcset={BuddyAvatarSavif} media="(max-width: 400px)" />
-          <source srcset={BuddyAvatarSwebp} media="(max-width: 400px)" />
-          <source srcset={BuddyAvatarSjpg} media="(max-width: 400px)" />
           <img className="info__avatar" src={BuddyAvatar} alt="Buddy"></img>
         </picture>
         <div className="info__text-container">
