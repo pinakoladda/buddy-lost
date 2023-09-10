@@ -41,9 +41,9 @@ export const Info = () => {
       <h3 className="info__header">{i18n("header")}</h3>
       <div className="info__container">
         <picture>
-          <source srcset={BuddyAvatarLavif} media="(max-width: 900px)" />
-          <source srcset={BuddyAvatarLwebp} media="(max-width: 900px)" />
-          <source srcset={BuddyAvatarLjpg} media="(max-width: 900px)" />
+          <source srcset={BuddyAvatarLavif} />
+          <source srcset={BuddyAvatarLwebp} />
+          <source srcset={BuddyAvatarLjpg} />
 
           <source srcset={BuddyAvatarSavif} media="(max-width: 400px)" />
           <source srcset={BuddyAvatarSwebp} media="(max-width: 400px)" />
